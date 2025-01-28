@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'GET') {
     //get method to get user data
 
     if (!isset($_GET['id'])) {
-        header("Location: ./index.php");
+        header("Location: ./.php");
         exit;
     }
 
@@ -99,18 +99,18 @@ if ($_SERVER["REQUEST_METHOD"] == 'GET') {
             <div class="row0">
             <label class="col-sm-4">Email</label>
             <div class="col-sm-7">
-                <input type="email" class="form-control" name="email" <?php echo $email; ?> required>
+                <input type="email" class="form-control" name="email" value="<?php echo $email; ?>" required>
             </div>
         </div>
         <div class="row1">
             <label class="col-sm-5">Phone</label>
             <div class="col-sm-8">
-                <input type="number" class="form-control" name="phone" <?php echo $phone; ?> required>
+                <input type="number" class="form-control" name="phone" value="<?php echo $phone; ?>" required>
             </div>
             <div class="row1">
             <label class="col-sm-5">Address</label>
             <div class="col-sm-8">
-                <input type="text" class="form-control" name="address" <?php echo $address; ?> required>
+                <input type="text" class="form-control" name="address" value="<?php echo $address; ?>" required>
             </div>
 
             <?php
