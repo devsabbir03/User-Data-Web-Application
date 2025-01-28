@@ -15,7 +15,7 @@ $success = "";
 if ($_SERVER["REQUEST_METHOD"] == 'GET') {
     //get method to get user data
 
-    if ( isset($_GET['id']) ) {
+    if ( !isset($_GET['id']) ) {
         header("Location: ./index.php");
         exit;
     }
